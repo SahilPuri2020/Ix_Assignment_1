@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4594" started-at="2020-08-21T01:50:44 IST" finished-at="2020-08-21T01:50:49 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4594" started-at="2020-08-21T01:50:44 IST" finished-at="2020-08-21T01:50:49 IST">
+      <class name="com.qa.testcases.FirstPageFlightsTest">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.qa.testcases.FirstPageFlightsTest@5a1c0542]" name="setUpTest" is-config="true" duration-ms="105" started-at="2020-08-21T01:50:44 IST" finished-at="2020-08-21T01:50:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="SearchTokenExtractTest()[pri:1, instance:com.qa.testcases.FirstPageFlightsTest@5a1c0542]" name="SearchTokenExtractTest" duration-ms="919" started-at="2020-08-21T01:50:44 IST" finished-at="2020-08-21T01:50:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTokenExtractTest -->
+        <test-method status="PASS" signature="FlightsSearchTest()[pri:2, instance:com.qa.testcases.FirstPageFlightsTest@5a1c0542]" name="FlightsSearchTest" duration-ms="3543" started-at="2020-08-21T01:50:45 IST" finished-at="2020-08-21T01:50:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightsSearchTest -->
+      </class> <!-- com.qa.testcases.FirstPageFlightsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
