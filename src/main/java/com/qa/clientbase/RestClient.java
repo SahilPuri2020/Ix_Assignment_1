@@ -20,17 +20,17 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class RestClient {
 
-	public static Properties prop;
+	protected static Properties prop;
 	
-	public static Properties propToken;
+	protected static Properties propToken;
 	
-	public static FileOutputStream fos;
+	protected static FileOutputStream fos;
 	
-	public static Logger logger;
+	protected static Logger logger;
 	
-	public static ExtentHtmlReporter reporter;
+	protected static ExtentHtmlReporter reporter;
 	
-	public static ExtentReports extent;
+	protected static ExtentReports extent;
 	
 	
 	// Initialization

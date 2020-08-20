@@ -12,26 +12,18 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class Initializer {
 	
-	static int logcheck=0;
-	
 	static int reportcheck=0;
 	
 	//Logging Utility
 	public static Logger logInitialize(Logger logger) {
-		
-		logcheck++;
-		
-		if (logcheck < 2) {
-			
+				
 			logger = Logger.getLogger(Initializer.class);
 			
 			PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/main/resources/log4j.properties");
 			
 			return logger;
-		}
-		
-		return logger;
 	}
+		
 
 	//Reporting Utility
 	public static ExtentReports reportInitializer(ExtentHtmlReporter reporter,ExtentReports extent) {
@@ -40,7 +32,7 @@ public class Initializer {
 		
 		if (reportcheck < 2) {
 			
-		reporter=new ExtentHtmlReporter("./Extent-Reports/BlueOptima.html");
+		reporter=new ExtentHtmlReporter("./Extent-Reports/Ixigo.html");
 		
 		extent=new ExtentReports();
 		

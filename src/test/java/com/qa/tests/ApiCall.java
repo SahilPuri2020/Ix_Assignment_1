@@ -13,27 +13,25 @@ import org.testng.annotations.Test;
 
 import com.qa.clientbase.RestClient;
 
-public class ApiCall {
-
-		RestClient restclient;
+public class ApiCall {	
 		
-		public CloseableHttpResponse getExecute(String uri, HashMap<String,String> headerMap) throws ClientProtocolException, IOException {
+	public CloseableHttpResponse getExecute(String uri, HashMap<String,String> headerMap) throws ClientProtocolException, IOException {
 			
-			restclient = new RestClient();
+		RestClient restclient = new RestClient();
 				
-			// RESPONSE RETURN --
+		// RESPONSE RETURN --
 			
-			//To-Do >> Sahil - Form a header array here and pass directly to RestClient
+		//To-Do >> Sahil - Form a header array here and pass directly to RestClient
 			
-			CloseableHttpResponse response = restclient.getcall(uri,headerMap);
+		CloseableHttpResponse response = restclient.getcall(uri,headerMap);
 			
-			int code = response.getStatusLine().getStatusCode();
+		int code = response.getStatusLine().getStatusCode();
 			
-			System.out.println("Response code is : " + code);
+		System.out.println("Response code is : " + code);
 			
-			System.out.println("Response Line is : " + response.getStatusLine());
+		System.out.println("Response Line is : " + response.getStatusLine());
 			
-			return response;
+		return response;
 			
 						
 		}

@@ -58,7 +58,7 @@ public class FirstPageFlightsTest extends RestClient {
 			Assert.assertEquals(response.getStatusLine().getStatusCode(),200);
 			
 			//Extract Search Token from first response
-			
+			logger.info("This is my first log4j's statement");
 			token = TestSupport.extractSearchToken(response);
 			
 			TestSupport.sendTokenToProp(token,propToken,fos);
